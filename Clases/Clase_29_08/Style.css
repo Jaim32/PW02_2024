@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  /* Root settings */
+  :root {
+    box-sizing: border-box;
+    --primary-color: #4a90e2; /* Primary color */
+    --secondary-color: #50e3c2; /* Secondary color */
+    --background-color: #f5f7fa; /* Background color */
+    --nav-background-color: #003366; /* Navigation background color */
+    --nav-hover-color: #f5a623; /* Hover color */
+    --nav-text-color: #ffffff; /* Navigation text color */
+    --font-family: 'Poppins', sans-serif; /* Main font */
+  }
+  
+  /* Body style */
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+  }
+  
+  /* Main navigation bar style */
+  /* Main navigation bar style */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--nav-background-color);
+    padding: 1em;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+}
+
+  
+  /* Navigation title style */
+  .main-nav h1 {
+    color: var(--primary-color);
+    padding-inline-start: 0.5em;
+    font-size: 1.5em;
+  }
+  
+  /* Navigation list style */
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+  }
+  
+  /* Navigation list item links */
+  .main-nav ul li a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    text-align: center;
+    display: block;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+  
+  /* Hover effect for list items */
+  .main-nav ul li:hover {
+    background-color: var(--nav-hover-color);
+  }
+  
+  .main-nav ul li:hover a {
+    color: var(--nav-background-color);
+  }
+  
+
+  /* Footer style */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--nav-background-color);
+    padding: 1em;
+    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
+    color: var(--nav-text-color);
+    text-align: center;
+}
+
+
+/* Contenedor de Comidas */
+/* Contenedor de Comidas */
+/* Contenedor de Comidas */
+div {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna que ocupa todo el ancho disponible */
+    justify-items: center; /* Centra el contenido de la columna */
+    padding-top: 100px; /* Ajusta este valor según la altura de tu header */
+    padding-bottom: 80px; /* Deja espacio para el footer fijo */
+    row-gap: 10px; /* Espaciado entre las imágenes */
+}
+
+/* Estilo para los divs con clase Comidas */
+.Comidas {
+    width: 80%; /* Ajusta este valor según lo que desees */
+    max-width: 500px; /* Establece un ancho máximo para las imágenes */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    overflow: hidden; /* Asegura que las imágenes no sobresalgan del div */
+}
+
+/* Estilo para las imágenes */
+.Comidas img {
+    width: 100%; /* Ocupa todo el ancho del div */
+    height: auto; /* Ajusta la altura proporcionalmente al ancho */
+    object-fit: cover; /* Asegura que la imagen cubra todo el área del div */
+    border-radius: 10px; /* Bordes redondeados, opcional */
+}
+

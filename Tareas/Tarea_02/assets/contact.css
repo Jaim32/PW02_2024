@@ -1,10 +1,9 @@
-/* Contact Page Styles */
+
 body {
-    background: url('photos/wp4052633.png') no-repeat center center/cover; /* Imagen de fondo */
+    background: url('photos/wp4052633.png') no-repeat center center/cover; 
     font-family: Arial, sans-serif;
 }
 
-/* Contact Form */
 .contact-form {
     padding: 2rem;
     background-color: #fff;

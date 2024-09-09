@@ -104,6 +104,13 @@ nav a:hover {
 
 
 
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
 /* Content Section */
 .content {
     display: grid;
@@ -119,6 +126,12 @@ article h2 {
     font-size: 1.75rem;
     color: #333;
     text-align: center;
+}
+article h3{
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 article p {
